@@ -1,5 +1,3 @@
-# Quora-Question-Pair-Similarity
-
 
 <h2 align= "center"><em>Quora Question Pair Similarity</em></h2>
 
