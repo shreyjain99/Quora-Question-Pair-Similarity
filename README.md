@@ -100,7 +100,7 @@
   <div align= "center">\/</div>
 
   <h3 align= "center"><strong>Basic Feature Extraction (before cleaning) </strong></h3>
-  <p align= "center"><em> - Constructing new features like :  </em></p>
+  <p align= "center"><em> <strong> Constructing new features like :  </strong></em></p>
   <p align= "center"><em> 1. freq_qid1 = Frequency of qid1's </em></p>
   <p align= "center"><em> 2. freq_qid2 = Frequency of qid2's </em></p>
   <p align= "center"><em> 3. q1len = Length of q1 </em></p>
