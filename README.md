@@ -117,22 +117,44 @@
   <div align= "center">|</div>
   <div align= "center">\/</div>
 
-  <h3 align= "center">Data Preprocessing (Natural Language Processing)</h3>
-  <p align= "center"><em> - Separated out code-snippets from Body </em></p>
-  <p align= "center"><em> - Removed Special characters from Question title and description </em></p>
-  <p align= "center"><em> - Removed stop words (Except 'C') </em></p>
-  <p align= "center"><em> - Converted all the characters into small letters </em></p>
-  <p align= "center"><em> - Used SnowballStemmer to stem the words </em></p>
+  <h3 align= "center">Preprocessing of text (Natural Language Processing)</h3>
+  <p align= "center"><em> - Removing html tags </em></p>
+  <p align= "center"><em> - Removing Punctuations </em></p>
+  <p align= "center"><em> - Performing stemming </em></p>
+  <p align= "center"><em> - Removing Stopwords </em></p>
+  <p align= "center"><em> - Expanding contractions etc. </em></p>
 
   <div align= "center">|</div>
   <div align= "center">|</div>
   <div align= "center">\/</div>
 
-  <h3 align= "center">Machine Learning Models</h3>
+  <h3 align= "center">Advanced Feature Extraction</h3>
   <p align= "center"><em> - Converted tags for multilabel problems </em></p>
   <p align= "center"><em>- Splited the data into test and train (80:20)  </em></p>
-  <p align= "center"><em> - Featurized data (TFIDF FEATURES) </em></p>
-  <p align= "center"><em> - Applyied Logistic Regression with OneVsRest Classifier</em></p>
+
+
+  <div align= "center">|</div>
+  <div align= "center">|</div>
+  <div align= "center">\/</div>
+
+  <h3 align= "center">Visualization of Data</h3>
+
+  <div align= "center">|</div>
+  <div align= "center">|</div>
+  <div align= "center">\/</div>
+
+  <h3 align= "center">Featurizing text data with tfidf weighted word-vectors </h3>
+
+  <div align= "center">|</div>
+  <div align= "center">|</div>
+  <div align= "center">\/</div>
+
+  <h3 align= "center">Building Machine Learning Models</h3>
+  <p align= "center"><em> - Building a random model (Finding worst-case log-loss)  </em></p>
+  <p align= "center"><em> - Logistic Regression with hyperparameter tuning   </em></p>
+  <p align= "center"><em> - Linear SVM with hyperparameter tuning  </em></p>
+  <p align= "center"><em> -  XGBoost </em></p>  
+
 
 
   
