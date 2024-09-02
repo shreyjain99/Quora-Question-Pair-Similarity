@@ -49,15 +49,9 @@
 <br>
 
 
-id - the id of a training set question pair
-qid1, qid2 - unique ids of each question (only available in train.csv)
-question1, question2 - the full text of each question
-is_duplicate - the target variable, set to 1 if question1 and question2 have essentially the same meaning, and 0 otherwise.
-
 <p>
 <strong>Features in the dataset :</strong>
 </p>
-Dataset contains 404290 rows. The columns in the table are:<br />
 <pre>
 <b>Id</b> - the id of a training set question pair<br />
 <b>qid1, qid2</b> - unique ids of each question (only available in train.csv)<br />
