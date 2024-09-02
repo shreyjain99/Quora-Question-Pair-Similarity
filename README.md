@@ -66,11 +66,7 @@
 <p>
 <strong>ML Problem Formulation :</strong>
 </p>
-<p> <strong>It is a multi-label classification problem</strong> </p>
-<p> 
-<b>Multi-label Classification</b>: Multilabel classification assigns to each sample a set of target labels. This can be thought as predicting properties of a data-point that are not mutually exclusive, such as topics that are relevant for a document. A question on Stackoverflow might be about any of C, Pointers, FileIO and/or memory-management at the same time or none of these. <br>
-Credit: http://scikit-learn.org/stable/modules/multiclass.html
-</p>
+<p> <strong>It is a binary classification problem, for a given pair of questions we need to predict if they are duplicate or not.</strong> </p>
 
 <br>
 <br>
@@ -79,8 +75,8 @@ Credit: http://scikit-learn.org/stable/modules/multiclass.html
 <strong>Performance metrics :</strong>
 </p>
 <ol>
-<li>Micro-Averaged F1-Score (Mean F Score) </li>
-<li>Hamming loss</li>
+<li>log-loss </li>
+<li>Binary Confusion Matrix</li>
 </ol>
 
 <hr width="100%" size="2">
@@ -134,17 +130,19 @@ Credit: http://scikit-learn.org/stable/modules/multiclass.html
 <hr width="100%" size="2">
 <br>
 
+<p>
+<strong>Confusion matrices of the best model :</strong>
+</p>
 <div align="center">
-  <img height="400" src="https://github.com/shreyjain99/TagGen-Automated-Tagging-for-Stack-Overflow-Questions/blob/main/src%20files/frequent%20tags.png"/>
+  <img height="400" src="https://github.com/shreyjain99/Quora-Question-Pair-Similarity/blob/main/src%20files/image.png"/>
 </div>
 
 <p>
 <strong>Future Scope :</strong>
 </p>
 <ol>
-<li>Use bag of words upto 4 grams and compute the micro f1 score with Logistic regression(OnevsRest) </li>
-<li>Perform hyperparameter tuning on alpha (or lambda) for Logistic regression to improve the performance using GridSearch</li>
-<li>Try OneVsRestClassifier with Linear-SVM (SGDClassifier with loss-hinge)</li>
+<li>Try out models (Logistic regression, Linear-SVM) with simple TF-IDF vectors instead of TD_IDF weighted word2Vec. </li>
+<li>Perform hyperparameter tuning of XgBoost models using RandomsearchCV with vectorizer as TF-IDF W2V to reduce the log-loss.</li>
 </ol>
 
 <hr width="100%" size="2">
