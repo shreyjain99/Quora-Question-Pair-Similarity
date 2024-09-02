@@ -137,6 +137,8 @@
   <img height="200" src="https://github.com/shreyjain99/Quora-Question-Pair-Similarity/blob/main/src%20files/image.png"/>
 </div>
 
+<br>
+
 <p>
 <strong>Future Scope :</strong>
 </p>
