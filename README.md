@@ -12,7 +12,7 @@
 <br>
 
 <p>
-<strong>Real World/Business Objective :</strong> Incorrect tags could impact customer experience on StackOverflow therefore Predict as many tags as possible with high precision and recall.
+<strong>Real World/Business Objective :</strong> To identify which questions asked on Quora are duplicates of questions that have already been asked doing this could be useful to instantly provide answers to questions that have already been answered.
 </p>
 
 <br>
@@ -22,43 +22,47 @@
 </p>
 <ol>
 <li>High precision and recall </li>
-<li>No latency constraints</li>
+<li>No strict latency constraints</li>
+<li>Probabilistic output</li>
+<li>Interpretability is partially important</li>
 </ol>
 
 <br>
 
 <p>
-<strong>Get the data from :</strong> https://www.kaggle.com/c/facebook-recruiting-iii-keyword-extraction/data
-<br>The data is from facebook recruiting prediction competition hosted on kaggle.
+<strong>Get the data from :</strong> https://www.kaggle.com/c/quora-question-pairs
+<br>The data is hosted by Quora as a featured prediction competition on kaggle
 </p>
 
 <br>
 
 <p>
-<strong>Data Collection :</strong>
+<strong>Data Overview :</strong>
 <br>
-All of the data is in 2 files: Train and Test.<br />
-<pre>
-<b>Train.csv</b> contains 4 columns: Id,Title,Body,Tags.<br />
-<b>Test.csv</b> contains the same columns but without the Tags, which you are to predict.<br />
-<b>Size of Train.csv</b> - 6.75GB<br />
-<b>Size of Test.csv</b> - 2GB<br />
-<b>Number of rows in Train.csv</b> = 6034195<br />
-</pre>
-The questions are randomized and contains a mix of verbose text sites as well as sites related to math and programming. The number of questions from each site may vary, and no filtering has been performed on the questions (such as closed questions).<br />
-<br />
+<p> 
+- Data will be in a file Train.csv <br>
+- Train.csv contains 5 columns : qid1, qid2, question1, question2, is_duplicate <br>
+- Size of Train.csv - 60MB <br>
+- Number of rows in Train.csv = 404,290
+</p>
 
 <br>
+
+
+id - the id of a training set question pair
+qid1, qid2 - unique ids of each question (only available in train.csv)
+question1, question2 - the full text of each question
+is_duplicate - the target variable, set to 1 if question1 and question2 have essentially the same meaning, and 0 otherwise.
 
 <p>
 <strong>Features in the dataset :</strong>
 </p>
-Dataset contains 6,034,195 rows. The columns in the table are:<br />
+Dataset contains 404290 rows. The columns in the table are:<br />
 <pre>
-<b>Id</b> - Unique identifier for each question<br />
-<b>Title</b> - The question's title<br />
-<b>Body</b> - The body of the question<br />
-<b>Tags</b> - The tags associated with the question in a space-seperated format (all lowercase, should not contain tabs '\t' or ampersands '&')<br />
+<b>Id</b> - the id of a training set question pair<br />
+<b>qid1, qid2</b> - unique ids of each question (only available in train.csv)<br />
+<b>question1, question2</b> - the full text of each question<br />
+<b>is_duplicate</b> - the target variable, set to 1 if question1 and question2 have essentially the same meaning, and 0 otherwise.<br />
 </pre>
 
 <br />
