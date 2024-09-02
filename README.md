@@ -128,9 +128,7 @@
   <div align= "center">|</div>
   <div align= "center">\/</div>
 
-  <h3 align= "center">Advanced Feature Extraction</h3>
-  <p align= "center"><em> - Converted tags for multilabel problems </em></p>
-  <p align= "center"><em>- Splited the data into test and train (80:20)  </em></p>
+  <h3 align= "center">Advanced Feature Extraction (NLP and Fuzzy Features)</h3>
 
 
   <div align= "center">|</div>
