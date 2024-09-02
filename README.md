@@ -89,18 +89,29 @@
   
   <br>
 
-  <h3 align= "center"><strong>Data Loading</strong></h3>
-
+  <h3 align= "center"><strong>Reading Data and Basic Stats</strong></h3>
+  <p align= "center"><em> - Total number of unique questions </em></p>
+  <p align= "center"><em> - Checking for Duplicates </em></p>
+  <p align= "center"><em> - Number of occurrences of each question </em></p>
+  <p align= "center"><em> - Checking for NULL values </em></p>
+  
   <div align= "center">|</div>
   <div align= "center">|</div>
   <div align= "center">\/</div>
 
-  <h3 align= "center"><strong>Analysis of tags</strong></h3>
-  <p align= "center"><em> - Total number of unique tags </em></p>
-  <p align= "center"><em> - Number of times a tag appeared </em></p>
-  <p align= "center"><em> - Tags Per Question </em></p>
-  <p align= "center"><em> - Most Frequent Tags </em></p>
-  <p align= "center"><em> - The top 20 tags </em></p>
+  <h3 align= "center"><strong>Basic Feature Extraction (before cleaning) </strong></h3>
+  <p align= "center"><em> - Constructing new features like :  </em></p>
+  <p align= "center"><em> 1. freq_qid1 = Frequency of qid1's </em></p>
+  <p align= "center"><em> 2. freq_qid2 = Frequency of qid2's </em></p>
+  <p align= "center"><em> 3. q1len = Length of q1 </em></p>
+  <p align= "center"><em> 4. q2len = Length of q2 </em></p>
+  <p align= "center"><em> 5. q1_n_words = Number of words in Question 1 </em></p>
+  <p align= "center"><em> 6. q2_n_words = Number of words in Question 2 </em></p>
+  <p align= "center"><em> 7. word_Common = Number of common unique words in Question 1 and Question 2 </em></p>
+  <p align= "center"><em> 8. word_Total = Total num of words in Question 1 + Total num of words in Question 2 </em></p>
+  <p align= "center"><em> 9. word_share = (word_common)/(word_Total) </em></p>
+  <p align= "center"><em> 10. freq_q1+freq_q2 = sum total of frequency of qid1 and qid2 </em></p>
+  <p align= "center"><em> 11. freq_q1-freq_q2 = absolute difference of frequency of qid1 and qid2 </em></p>
 
   <div align= "center">|</div>
   <div align= "center">|</div>
