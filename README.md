@@ -134,7 +134,7 @@
 <strong>Confusion matrices of the best model :</strong>
 </p>
 <div align="center">
-  <img height="400" src="https://github.com/shreyjain99/Quora-Question-Pair-Similarity/blob/main/src%20files/image.png"/>
+  <img height="200" src="https://github.com/shreyjain99/Quora-Question-Pair-Similarity/blob/main/src%20files/image.png"/>
 </div>
 
 <p>
